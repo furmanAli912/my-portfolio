@@ -1,9 +1,8 @@
-// import ProjectCard from "@/components/ProjectCard";
 import ProjectCard from "../../components/ProjectCard";
-
 
 const projects = [
   {
+    slug: "shopnow",
     title: "ShopNow E-Commerce",
     description:
       "A full-stack MERN e-commerce application with authentication, cart, and admin panel.",
@@ -13,6 +12,7 @@ const projects = [
     github: "https://github.com/furmanAli912/fyp-project",
   },
   {
+    slug: "portfolio",
     title: "Portfolio Website",
     description:
       "Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion.",
@@ -28,7 +28,6 @@ export default function ProjectsPage() {
     <section className="w-full bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
-        {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
             Projects
@@ -38,10 +37,9 @@ export default function ProjectsPage() {
           </p>
         </div>
 
-        {/* Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
+            <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </div>
