@@ -28,6 +28,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/skills" className="hover:text-blue-600 transition">
+              Skills
+            </Link>
+          </li>
+          <li>
             <Link href="/projects" className="hover:text-blue-600 transition">
               Projects
             </Link>
@@ -38,14 +43,6 @@ export default function Navbar() {
             </Link>
           </li>
         </ul>
-
-        {/* CTA for Fiverr / Clients */}
-        <Link
-          href="/contact"
-          className="px-5 py-2.5 rounded-md bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition"
-        >
-          Let’s Build Your Project
-        </Link>
 
       </nav>
     </header>
