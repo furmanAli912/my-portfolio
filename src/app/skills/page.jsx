@@ -8,7 +8,7 @@ import {
   Cpu,
 } from "lucide-react";
 
-import SkillCard from "@/components/SkillCard";
+import SkillCard from "@/componentsTemps/SkillCard";
 
 export default function SkillsPage() {
   return (

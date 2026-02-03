@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import Hero from "@/componentsTemps/Hero";
 
 export const metadata = {
   title: "Furman Ali | Frontend & MERN Stack Developer",
