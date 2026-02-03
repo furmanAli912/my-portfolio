@@ -20,7 +20,7 @@ const projects = [
       "Personal portfolio built with Next.js, Tailwind CSS, and Framer Motion.",
     image: "/images/projects/portfolio.png",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
-    live: "#",
+    live: "https://my-portfolio-fk.vercel.app/",
     github: "https://github.com/furmanAli912/my-portfolio",
   },
 ];
