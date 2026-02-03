@@ -1,4 +1,4 @@
-import AboutPage from "@/componentsTemps/AboutPage";
+import AboutPage from "@/components/AboutPage";
 
 export const metadata = {
   title: "About | Furman Ali – Frontend & MERN Stack Developer",

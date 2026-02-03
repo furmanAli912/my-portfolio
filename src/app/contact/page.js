@@ -1,4 +1,4 @@
-import ContactPage from "@/componentsTemps/ContactPage";
+import ContactPage from "@/components/ContactPage";
 
 export const metadata = {
   title: "Contact | Furman Ali – Frontend & MERN Stack Developer",
