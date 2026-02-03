@@ -1,4 +1,5 @@
-import ProjectCard from "@/components/projectcardtemp";
+import ProjectCard from "@/components/projectcard";
+
 
 
 const projects = [
