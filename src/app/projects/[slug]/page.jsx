@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -66,35 +68,36 @@ export default async function ProjectDetailPage({ params }) {
       <div className="max-w-6xl mx-auto px-6 py-24">
 
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-          {project.title}
+        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+          <span className="text-blue-600">{project.title}</span>
         </h1>
 
-        <p className="text-gray-600 max-w-3xl mb-8">
+        {/* Description */}
+        <p className="text-gray-600 max-w-3xl mb-10">
           {project.description}
         </p>
 
         {/* Image */}
-        <div className="relative w-full h-[420px] rounded-xl overflow-hidden shadow-lg mb-12">
+        <div className="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-lg mb-14 bg-gray-50">
           <Image
             src={project.image}
             alt={project.title}
             fill
-            className="object-contain bg-gray-50 p-6"
+            className="object-contain p-6"
             priority
           />
         </div>
 
         {/* Tech Stack */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+        <div className="mb-14">
+          <h2 className="text-2xl font-bold text-blue-600 mb-5">
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-3">
             {project.tech.map((item) => (
               <span
                 key={item}
-                className="px-4 py-1.5 text-sm rounded-full bg-blue-50 text-blue-700 font-medium"
+                className="px-4 py-1.5 text-sm font-medium rounded-full bg-blue-50 text-blue-700"
               >
                 {item}
               </span>
@@ -102,14 +105,17 @@ export default async function ProjectDetailPage({ params }) {
           </div>
         </div>
 
-        {/* Features */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+        {/* Key Features */}
+        <div className="mb-14">
+          <h2 className="text-2xl font-bold text-blue-600 mb-5">
             Key Features
           </h2>
-          <ul className="space-y-2 text-gray-700">
+          <ul className="space-y-3 text-gray-700">
             {project.features.map((feature) => (
-              <li key={feature}>✅ {feature}</li>
+              <li key={feature} className="flex items-start gap-3">
+                <span className="text-blue-600 font-bold text-lg">•</span>
+                <span>{feature}</span>
+              </li>
             ))}
           </ul>
         </div>
@@ -127,7 +133,7 @@ export default async function ProjectDetailPage({ params }) {
           <Link
             href={project.github}
             target="_blank"
-            className="px-6 py-3 rounded-md border border-gray-300 hover:border-blue-600 hover:text-blue-600 transition"
+            className="px-6 py-3 rounded-md border border-gray-300 text-gray-800 hover:border-blue-600 hover:text-blue-600 transition"
           >
             View Code
           </Link>
