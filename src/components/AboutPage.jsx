@@ -21,7 +21,7 @@ export default function AboutPage() {
               src="/images/profile.jpg"
               alt="Furman Ali"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               priority
             />
           </div>
@@ -68,15 +68,15 @@ export default function AboutPage() {
           {/* STATS */}
           <div className="grid grid-cols-3 gap-6 text-center my-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900">46+</h3>
+              <h3 className="text-2xl font-bold text-gray-900">20+</h3>
               <p className="text-sm text-gray-600">Repositories</p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-gray-900">5+</h3>
+              <h3 className="text-2xl font-bold text-gray-900">4+</h3>
               <p className="text-sm text-gray-600">Projects</p>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-gray-900">3+</h3>
+              <h3 className="text-2xl font-bold text-gray-900">2+</h3>
               <p className="text-sm text-gray-600">Experience</p>
             </div>
           </div>

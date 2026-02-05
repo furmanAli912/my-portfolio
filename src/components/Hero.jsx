@@ -84,19 +84,20 @@ export default function Hero() {
           className="relative flex justify-center md:justify-end"
         >
           {/* Glow */}
-          <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-blue-200/40 rounded-full blur-3xl -z-10" />
+          <div className="absolute w-80 h-80 md:w-[420px] md:h-[420px] bg-blue-200/40 rounded-full blur-3xl -z-10" />
 
-          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+          {/* Image Wrapper */}
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-[5px] border-white shadow-2xl">
             <Image
               src="/images/profile.jpg"
               alt="Furman Ali"
               fill
-              className="object-cover"
+              sizes="(max-width: 768px) 288px, 384px"
+              className="object-cover object-top"
               priority
             />
           </div>
         </motion.div>
-
       </div>
     </section>
   );
