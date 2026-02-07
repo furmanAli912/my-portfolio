@@ -121,12 +121,12 @@ export default async function ProjectDetailPage({ params }) {
           <Link
             href={project.github}
             target="_blank"
-            className="px-6 py-3 border rounded"
+            className="px-6 py-3 text-black border rounded"
           >
             View Code
           </Link>
 
-          <Link href="/projects">← Back to Projects</Link>
+          <Link href="/projects" className=" text-black">← Back to Projects</Link>
         </div>
 
       </div>
