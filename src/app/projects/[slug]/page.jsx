@@ -49,8 +49,8 @@ const projects = {
 };
 
 /* ================= PAGE ================= */
-export default async function ProjectDetailPage({ params }) {
-  const { slug } = await params;
+export default function ProjectDetailPage({ params }) {
+  const { slug } = params;
   const project = projects[slug];
 
   if (!project) {
@@ -83,7 +83,7 @@ export default async function ProjectDetailPage({ params }) {
             src={project.image}
             alt={project.title}
             fill
-            className="object-contain p-6"
+            className="object-contain p-6 pointer-events-none"
             priority
           />
         </div>
