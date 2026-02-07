@@ -102,7 +102,7 @@ export default async function ProjectDetailPage({ params }) {
 
         <div className="mb-14">
           <h2 className="text-2xl font-bold mb-5 text-blue-600">Key Features</h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-stone-950">
             {project.features.map((f) => (
               <li key={f}>• {f}</li>
             ))}
