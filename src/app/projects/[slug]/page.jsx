@@ -49,8 +49,9 @@ const projects = {
 };
 
 /* ================= PAGE ================= */
-export default function ProjectDetailPage({ params }) {
-  const { slug } = params;
+export default async function ProjectDetailPage({ params }) {
+  // ✅ REQUIRED in Next.js 15/16
+  const { slug } = await params;
   const project = projects[slug];
 
   if (!project) {
