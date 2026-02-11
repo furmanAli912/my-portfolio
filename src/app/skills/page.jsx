@@ -33,10 +33,11 @@ export default function SkillsPage() {
             title="Web Development"
             items={[
               "HTML5, CSS3, JavaScript",
-              "React & Next.js",
+              "React & Basic Next.js",
               "Tailwind CSS",
               "Responsive UI",
-              "SEO Best Practices",
+              "Basic SEO",
+              "Bootstrap",
             ]}
           />
 
@@ -48,7 +49,7 @@ export default function SkillsPage() {
               "Problem Solving",
               "Logic Building",
               "Data Structures (Basic)",
-              "Competitive Programming",
+              "Python",
             ]}
           />
 
